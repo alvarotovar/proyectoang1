@@ -1,0 +1,8 @@
+ <form #heroForm="ngForm">
+
+    <label for="inputNombre">Ingresa un criterio de busqueda</label>
+    <input type="text" [(ngModel)]="model.nombre" name="nameNombre" required
+    id="inputNombre" />
+    <button type="submit" [disabled]="!heroForm.form.valid" (click)="clear()">buscar</button>
+  </form>
+
