@@ -1,0 +1,13 @@
+<label>Server name</label>
+  <input type="text" [(ngModel)]="newServerName" class="form-control">
+  <hr>
+  <label> server Content</label>
+  <input type="text" [(ngModel)]="newServerContent" class="form-control">
+  <hr>
+  <div>
+    <div class="btn-group btn-group-justified">
+      <button class=" btn btn-danger" style="width: 15%" (click)="onAddServer()">add Server</button>
+      <button class=" btn btn-primary" style="width: 15%" (click)="onAddBluePrint()">add bluePrint server</button>
+
+    </div>
+  </div>

@@ -4,11 +4,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
+import { ServerElementComponent } from './server-element/server-element.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroFormComponent
+    HeroFormComponent,
+    ServerElementComponent,
+    CockpitComponent
   ],
   imports: [
     BrowserModule,
