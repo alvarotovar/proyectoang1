@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { ServerElementComponent } from './server-element/server-element.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
+import { ListacargosComponent } from './listacargos/listacargos.component';
+import { CrearCargoComponent } from './crear-cargo/crear-cargo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroFormComponent,
     ServerElementComponent,
-    CockpitComponent
+    CockpitComponent,
+    ListacargosComponent,
+    CrearCargoComponent
   ],
   imports: [
     BrowserModule,

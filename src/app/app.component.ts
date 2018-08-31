@@ -8,23 +8,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'proyectoang1';
   serverElements = [];
-  newServerName = "";
-  newServerContent = "";
-  
-  onAddServer(){
+
+
+  onServerAdded(serverDate : {name : String, content : String}){
     this.serverElements.push({
-      type: 'server',
-      name: this.newServerName,
-      content: this.newServerContent
-    });
+      name : serverDate.name,
+      type :'server',
+      content : serverDate.content
+    });  
   }
 
-  onAddBluePrint(){
+  onBluePrintAdded(serverDate : {name : String, content : String}){
     this.serverElements.push({
-      type: 'blueprint',
-      name: this.newServerName,
-      content: this.newServerContent
-
-    })
+      name : serverDate.name,
+      type :'blueprint',
+      content : serverDate.content
+    });  
   }
+
 }

@@ -1,8 +1,14 @@
-<div class="container">
-  <app-cockpit></app-cockpit>
-  <div >
-    <app-server-element *ngFor="let se of serverElements"  [element]="se">
+
+<!--div class="container">
+  <app-cockpit (serverCreated)="onServerAdded($event)" 
+    (blueprintCreated)="onBluePrintAdded($event)"></app-cockpit>
+  lista
+   <div *ngFor="let se of serverElements">
+    
+    <app-server-element   [element]="se">
 
     </app-server-element>
   </div>
-</div>
+</div-->
+
+<app-listacargos></app-listacargos>

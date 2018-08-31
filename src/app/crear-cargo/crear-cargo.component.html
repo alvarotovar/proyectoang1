@@ -1,0 +1,9 @@
+<label>Nombre</label>
+<input type="text" [(ngModel)]="cargo.nombre">
+<label>Edad</label>
+<input type="text" [(ngModel)]="cargo.edad">
+<select [(ngModel)]="cargo.cargo">
+  <option value="Artista">Artista</option>
+  <option value="Escritor">Escritor</option>
+</select>
+<button type="button" (click)="emite()">Adiciona</button>

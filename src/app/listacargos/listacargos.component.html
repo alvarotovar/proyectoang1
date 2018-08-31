@@ -1,0 +1,8 @@
+<p>
+  listacargos works!
+</p>
+<app-crear-cargo (emitirCargo)="adicionaNuevo($event)"></app-crear-cargo>
+
+<div *ngFor="let c of listaCargos">
+  {{ c.nombre }}
+</div>
